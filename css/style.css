@@ -6,13 +6,14 @@
 /* Body */
 
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size:cover;
     font-family: 'Kaisei Tokumin', serif;
     height: auto;
     width:100%;
+    overflow:hidden;
     text-align: justify;
 }
 
@@ -46,6 +47,7 @@ body {
 #navbar__list a {
     font-family: 'Kaisei Tokumin', serif;
     color: grey;
+    transition: all 0.95s;
 }
 
 
@@ -112,7 +114,7 @@ h1 {
 /* Sections Flex */
 
 .landing__container{
-    margin-top: 30px;
+    margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
     display: grid;
@@ -163,7 +165,7 @@ p {
 /* Footer */
 
 footer {
-    margin-top: 65px;
+    margin-top: 130px;
     text-align: center;
     font-size: 1.5em;
 }
@@ -201,14 +203,18 @@ h1 {
     font-size: 2.7em;
 }
 
-#services {
-    display: none;
-}
-
 .landing__container {
     display: flex;
     flex-direction: column;
     height: auto;
+}
+
+#service-section {
+    flex-direction: column-reverse;
+}
+
+footer {
+    margin-top: 80px;
 }
 }
 
