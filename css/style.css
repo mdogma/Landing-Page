@@ -1,0 +1,254 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@500&display=swap');
+
+
+/* Body */
+
+body {
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Kaisei Tokumin', serif;
+    height: auto;
+    width:100%;
+    text-align: justify;
+}
+
+/* Navbar */
+
+.page__header { 
+    position: sticky;
+    top: 0;
+}
+
+.navbar__menu {
+    display: flex;
+    justify-content: flex-end;
+    min-height: 8vh;
+    background-color: rgb(77, 36, 29);
+}
+
+#navbar__list {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 1.3em;
+    list-style: none;
+}
+
+#navbar__list li {
+    height: 8px;
+    padding-bottom: 20px;
+}
+
+#navbar__list a {
+    font-family: 'Kaisei Tokumin', serif;
+    color: grey;
+}
+
+
+#navbar__list a:hover {
+    text-decoration: overline;
+}
+
+.burger {
+    padding-top:15px;
+}
+
+.burger div { 
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: grey;
+    display: none;
+}
+
+/* Navbar active class + Fade effect */
+
+#navbar__list.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
+
+/* Banner styling */ 
+
+.banner {
+    height: 650px;
+    margin-top: 20px;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 5em;
+    color : rgba(179, 101, 101, 0.637);
+    text-shadow: 1px 1px #0c0b0b;
+}
+
+.bannerTitleTwo {
+    margin-top: -25px;
+    font-size: 2.7em;
+    font-style: italic;
+    color: grey;
+}
+
+
+/* Sections Flex */
+
+.landing__container{
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* Sections style */
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+h2 {
+    color : rgba(179, 101, 101, 0.637);
+    font-style: italic;
+}
+.text1,
+.text3 {
+    padding-left: 20px;
+}
+
+.text2 {
+    padding-right: 20px;
+}
+
+p {
+    color: grey;
+}
+
+/* Google Map */
+
+.map-responsive {
+    overflow: hidden;
+}
+
+
+/* Active Class for sections  */
+
+.active {
+    box-shadow: 1px 0px 0 1px #2e2e2e;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 65px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*   Media Queries  */
+
+/* Larger screens */
+
+@media(max-width:1070px) {
+
+    #navbar__list {
+        width: 80%;
+    }
+
+    .navbar__menu {
+        justify-content: center;
+    }
+
+    #contact-section {
+        grid-template-columns: 100%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 300px;
+    } 
+}
+
+
+/* Medium screens */ 
+
+@media(max-width:830px) {
+
+h1 { 
+    font-size: 2.7em;
+}
+
+#services {
+    display: none;
+}
+
+.landing__container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+}
+
+@media(max-width:768px) {
+
+    body { 
+        overflow-x: hidden;
+    }
+
+#navbar__list {
+    position: absolute;
+    width:100%;
+    height: 92vh;
+    top: 5.2vh;
+    background-color: rgb(182, 187, 182);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5 ease-in;
+}
+
+#navbar__list li {
+    opacity: 0;
+    margin-right: 6%;
+}
+
+.burger div {
+    display: block;
+}
+}
+
+/* Smaller screens */
+
+@media(max-width:550px){
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .bannerTitleTwo {
+        font-size: 1.5em;
+    }
+}

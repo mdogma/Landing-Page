@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Hollie Jackson - Naturopath </title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <header class="banner">
+      <h1>HOLLIE JACKSON</h1> 
+      <h2 class="bannerTitleTwo"> Naturopath and Herbalist </h2>
+    </header>
+
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+
+    <section id="section1" data-nav="Naturopathy" class="active">
+      <div class="landing__container">
+        <div class="photo"><img src="./images/photo1.jpg"></div>
+        <div class="text1">
+        <h2>What is Naturopathy?</h2> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        </div> 
+    </div>
+    </section>
+
+    <section id="section2" data-nav="About">
+      <div class="landing__container">
+        <div class="text2">
+        <h2>About me</h2><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
+        </div>
+        <div class="photo"><img src="./images/woman.jpeg"></div>
+    </div>
+
+    </section>
+
+    <section id="section3" data-nav="Services">
+      <div class="landing__container">
+        <div class="photo" id="services"><img src="./images/services.jpg"></div>
+        <div class="text3">
+        <h2>Services</h2><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus.</p>
+        </div>
+</div>
+    </section>
+
+    <section id="section4" data-nav="Contact">
+        <div class="landing__container" id="contact-section">
+          <div class="text4">
+          <h2>Contact</h2><br>
+          <div class='details'>
+            <p> Hollie Jackson<br>
+                +44 7XXXX XXXXX<br>
+                hollie.jackson@xxxxxx.com
+            </p>
+          </div>
+        <div class='map-responsive'>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.0797011825243!2d-0.11639548423844302!3d51.530097979638896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2a15ab2d6b%3A0x967a0b0692a81a4!2sCNM%20-%20College%20of%20Naturopathic%20Medicine!5e0!3m2!1sen!2suk!4v1630011835656!5m2!1sen!2suk" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        </div>
+         <div class="photo"><img src="./images/contact.jpg"></div>
+      </section>
+
+  </main>
+
+  <footer class="page__footer">
+    <p>&copy Hollie Jackson 2021</p>
+  </footer>
+
+<script src='./js/app.js'></script>
+</body>
+
+</html>
