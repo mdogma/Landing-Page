@@ -55,7 +55,7 @@ const navCreation = (elements) => {
 // Add class 'active' to section when section reaches the top of the viewport
 
 const mediumScreen = window.matchMedia("(max-width: 720px)");
-/*const smallScreen = window.matchMedia("(max-width: 470px)");*/
+const smallScreen = window.matchMedia("(max-width: 450px)");
 
 function turnSectionActive(elements) {
   for (element of elements) {
@@ -63,7 +63,12 @@ function turnSectionActive(elements) {
     if (rect.top <= 180 && rect.bottom >= 180) {
       element.classList.add('active');
     } 
+    //For Medium Screens
     else if (mediumScreen.matches && rect.top <= 660 && rect.bottom >= 660) {
+      element.classList.add('active');
+    }
+    // For small screens
+    else if (smallScreen.matches && rect.top <= 760 && rect.bottom >= 760) {
       element.classList.add('active');
     }
     else {
