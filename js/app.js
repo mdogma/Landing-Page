@@ -68,7 +68,7 @@ function turnSectionActive(elements) {
       element.classList.add('active');
     }
     // For small screens
-    else if (smallScreen.matches && rect.top <= 760 && rect.bottom >= 760) {
+    else if (smallScreen.matches && rect.top <= 740 && rect.bottom >= 740) {
       element.classList.add('active');
     }
     else {
