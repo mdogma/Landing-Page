@@ -8,7 +8,7 @@ The page explains what lies behind naturopathy, a quick description of the pract
 
 ## Demo
 
-[Click here for the demo](https://duckduckgo.com)
+[Click here for the demo](https://mdogma.github.io/Landing-Page/)
 
 ## Development
 
