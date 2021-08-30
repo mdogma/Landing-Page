@@ -26,6 +26,13 @@ const aLinks = document.getElementsByTagName('a');
 
 const sections = document.querySelectorAll('section');
 
+const smallScreen = window.matchMedia("(max-width: 450px)");
+
+const mediumScreen = window.matchMedia("(max-width: 750px)");
+
+const largeScreen = window.matchMedia("(min-width: 751px)")
+
+
 /**
  * End Global Variables
  * Start Helper Functions
@@ -54,43 +61,23 @@ const navCreation = (elements) => {
 
 // Add class 'active' to section when section reaches the top of the viewport
 
-const mediumScreen = window.matchMedia("(max-width: 720px)");
-const smallScreen = window.matchMedia("(max-width: 450px)");
-
-function turnSectionActive(elements) {
-  for (element of elements) {
-    const rect = element.getBoundingClientRect();
-    if (rect.top <= 180 && rect.bottom >= 180) {
-      element.classList.add('active');
-    } 
-    //For Medium Screens
-    else if (mediumScreen.matches && rect.top <= 660 && rect.bottom >= 660) {
-      element.classList.add('active');
-    }
-    // For small screens
-    else if (smallScreen.matches && rect.top <= 740 && rect.bottom >= 740) {
-      element.classList.add('active');
-    }
-    else {
-      element.classList.remove('active');
-    }
-  }
-}
-
-/*
 function turnSectionActive(elements) {
     for (element of elements) {
       const rect = element.getBoundingClientRect();
-      if (rect.top <= 180 && rect.bottom >= 180) {
+      // For Large screens 
+      if (largeScreen.matches && rect.top <= 190 && rect.bottom >= 190) {
         element.classList.add('active');
-      } 
-      else (else {
+      // For Medium screens
+      } else if (mediumScreen.matches && rect.top <= 690 && rect.bottom >= 690) {
+        element.classList.add('active');
+      } else if (smallScreen.matches && rect.top <= 190 && rect.bottom >= 190){
+        element.classList.add('active');
+      } else {
         element.classList.remove('active');
       }
     }
  }
 
- */
 
 // Scroll to anchor ID using scrollIntoView event
 
