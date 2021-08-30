@@ -253,4 +253,17 @@ h1 {
     .bannerTitleTwo {
         font-size: 1.5em;
     }
+    
+    .text1 {
+        padding-right: 10px;
+        padding-left : 1px;
+    }
+    .text3 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .text2 {
+        padding-right: 10px;
+    }
 }
