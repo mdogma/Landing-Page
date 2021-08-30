@@ -76,7 +76,7 @@ function turnSectionActive(elements) {
         element.classList.remove('active');
       }
     }
- }
+ };
 
 
 // Scroll to anchor ID using scrollIntoView event
@@ -88,7 +88,7 @@ function linker() {
         const dataRelated = document.getElementById(link.getAttribute('data-link'));
         dataRelated.scrollIntoView({behavior:'smooth', block: 'center'})
     })
-  })
+  });
 }
 
 /**
@@ -132,7 +132,7 @@ for (let i = 1 ; i <= 3 ; i++) {
   const newDivs = document.createElement('div');
   respMenu.appendChild(newDivs);
   newDivs.setAttribute('class', 'line'+[i])
-}
+};
 
 
 // Function allowing the hidden menu to show up progressively in the viewport once our burger icon is clicked on
@@ -147,8 +147,8 @@ const navSlide = () => {
       // Animation effect to slowly bring the <li> up to the screen
     navLinks.forEach((navli, index) => { 
       navli.style.animation = `navLinkFade 0.5s ease forwards ${index/ 7 + 0.7}s`;
-  })
-})
+  });
+});
 }
 
 // Calling our function navSlide
